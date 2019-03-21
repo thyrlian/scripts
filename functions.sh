@@ -170,6 +170,7 @@ if [ ! -f ${cbfstoolcmd} ]; then
 
     #echo_yellow "Downloading cbfstool utility"
     curl -sLO "${util_source}"cbfstool.tar.gz
+    echo "${util_source}"cbfstool.tar.gz
     if [ $? -ne 0 ]; then
         echo_red "Error downloading cbfstool; cannot proceed."
         #restore working dir
